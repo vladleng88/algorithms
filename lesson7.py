@@ -24,7 +24,7 @@ def recursion_recatangle():
     fractal_rectangle((100,100), (400,100), (400,400), (100,400), 10)
     win.getMouse() # Pause to view result
     win.close()
-def recursion_factorial():
+def recursion_factorial(N):
     """
     Функция для рекурсивного вычисления факториала числа
     :return:
@@ -35,9 +35,9 @@ def recursion_factorial():
             return 1
         return factorize_number(N-1)*N
 
-    N = 3
     res = factorize_number(N)
-    print('Task1. {0}! = {1} '.format(N,res))
+#    print('Task1. {0}! = {1} '.format(N,res))
+    return res
 def recursion_gcd():
     """
     Функция для рекурсивного Наибольшего общего делителя
@@ -101,8 +101,10 @@ def recursion_hanoi():
     stop = 3
     print('Task4. Hanoi building...{} floor, from {}-th  to {} -th position'.format(height, start, stop))
     hanoi(3,1,3)
-recursion_factorial()
-recursion_recatangle()
-recursion_gcd()
-recursion_power()
-recursion_hanoi()
+
+
+#recursion_factorial(5)
+#recursion_recatangle()
+#recursion_gcd()
+#recursion_power()
+#recursion_hanoi()
